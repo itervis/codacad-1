@@ -1,0 +1,40 @@
+header {
+    background-color: blue;
+    padding: 5px;
+}
+nav {
+    background: red;
+    width: 70%;
+    margin-left:auto; 
+    margin-right:auto; 
+}
+
+nav ul.top-menu {
+    padding-left: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: nowrap; 
+}
+    nav ul.top-menu li {
+    /* width: 100px;  */
+    display: inline-block;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+a:hover {
+    color: white;
+}
+
+h1 {
+    color: red;
+}
+
+img {
+    height: 50px;
+    margin: 4px;
+}

@@ -1,0 +1,28 @@
+table {
+    width: 300px;
+    border-collapse: collapse;
+}
+
+tr { 
+    border: 2px solid rgb(36, 87, 32); 
+}
+
+tr:nth-child(even) {
+    background-color: rgb(251, 192, 115);
+}
+
+tr:nth-child(odd) {
+    background-color: rgb(253, 236, 214);
+}
+
+th, td {
+    text-align:left;
+    font-weight: normal;
+    
+}
+.year {
+    color: white;
+    font-weight: 900;
+    background-color: rgb(143, 64, 0);
+}
+

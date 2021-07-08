@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Homework 0701</title>
+</head>
+<body>
+    <div class="container m-5">
+        <div class="row border rounded m-2">
+            <p class="border-bottom py-2">Paspaudus mygtuka isveskite alert('Hellow World")</p>        
+            <div class="col-2 mx-auto pb-3">
+                <button type="button" class="btn btn-outline-primary m-3" id="alertBtn">Click on me</button>
+            </div>
+        </div>
+        <div class="row border rounded m-2">
+            <p class="border-bottom py-2">Ivestai reiksmei priklausomai nuo paspausto mygtuko keiciame registra(Dideles/Mazos raides)</p>        
+            <div class=" col input-group pt-4 pb-5">
+                <input type="text" class="form-control" placeholder="Fill me in" id="inputModification">
+                <button type="button" class="btn btn-outline-secondary" id="btnToUpperCase">To UpperCase</button>
+                <button type="button" class="btn btn-outline-secondary" id="bthToLowerCase">To Lower Case</button>
+                <button type="button" class="btn btn-outline-secondary" id="bthFirstUpperCase">First Upper Case</button>
+                <button type="button" class="btn btn-outline-secondary" id="bthFirstLowerCase">First Lower Case</button>
+            </div>
+        </div>
+        <div class="row border rounded m-2">
+            <div class="border-bottom py-2">
+                <p>Paspaudus mygtuka patikrinkite ivestas reiksmes ir jeigu reikia parodykite klaidu pranesimus</p>  
+                <ul>
+                    <li>element show/hide</li>
+                    <li>class add/remove</li>
+                </ul>
+            </div>          
+            <form class=my-4>
+                <div class="row mb-3">
+                    <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
+                    <div class="col-sm-10">
+                        <input type="email" class="form-control" id="inputEmail">
+                    </div>
+                    <span class="emailValid offset-md-2"></span>
+                </div>
+                <div class="row mb-3">
+                    <label for="inputPhone" class="col-sm-2 col-form-label">Phone Number</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="inputPhone">
+                    </div>
+                    <span class="phoneValid offset-md-2"></span>
+                </div>
+                <button type="button" class="btn btn-outline-dark col-md-1 offset-md-2" id="saveBtn">Save</button>
+            </form>
+        </div>
+        <div class="row border rounded m-2">
+            <p class="border-bottom py-2">Paspaudus mygtuka uzblokokite/atblokokite input</p>        
+            
+            <div class=" col input-group pt-4 pb-5">
+                <button type="button" class="btn btn-outline-danger" id="btnBlock">Block</button>
+                <input type="text" class="form-control" placeholder="I'm input! You can try to enter something..." id="inputBlock">
+                <button type="button" class="btn btn-outline-success" id="bthUnBlock">UnBlock</button>                    
+            </div>
+        </div>
+        <div class="row border rounded m-2">
+            <p class="border-bottom py-2">Uzvedus ant paveiksliuko pakeiskite ji</p>        
+            <img src="https://i.imgur.com/0DElr0H.jpg" class="rounded mx-auto d-block" alt="" id="changingImg">
+        </div>
+
+            
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>

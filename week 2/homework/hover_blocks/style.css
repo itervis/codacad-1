@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.item {
+  flex: 15%;
+  margin: 1vw;
+  background-color: #009abf;
+    
+}
+
+.item:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
+
+.item:nth-child(2n) {
+  background-color: #000;
+}
+
+.item:hover {
+  background-color: #ff9f19;
+}

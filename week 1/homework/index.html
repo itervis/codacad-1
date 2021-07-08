@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Homework registration</title>
+</head>
+
+<body>
+    <form method="GET" action="/index.php">
+        <!-- priklausomai nuo to kur eis i back enda arba uztenka 1 arba kiekvienai daliai skirtingas formas, tada skirtinguose duombazese saugos rezultatus -->
+        <h1>Registracija į kursus</h1>
+        <hr>
+    
+        
+        <label for="name">
+            <name_helper value="Jūsų vardas ir pavardė">Vardas:
+            <input type="text" name="name" id="name">
+            <!-- name="" naudojamas ir back end, kad suprasti prie kurio priskiriamas -->
+            </name_helper>
+        </label>
+        
+        <h2>Programavimo kalba:</h2>
+
+        <label for="c++">C++
+            <input type="radio" id="c++" value="c++01024" name="language"> 
+        </label>
+        <br>
+<!-- value=" " irgi naudojamas back ende -->
+        <label for="PHP">PHP
+            <input type="radio" id="php" value="php01024" name="language">
+         </label>
+        <br>
+
+        <label for="python">Python
+            <input type="radio" id="python" value="python01024" name="language">
+        </label>
+
+        <h2>Papildoma informacija</h2>
+
+        <textarea id="more_info" name="more_info" rows="4" cols="40" style="margin-bottom: 15px;">Pvz. :turite C++ programavimo patirties</textarea>
+        <br>
+
+        <label for="password">Slaptažodis:</label>
+        <br>
+        <input type="password" id="password" name="password" required minlegth="6" maxlength="16"
+        style="margin-bottom: 15px;">
+
+        <select>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+        </select>
+        <br>
+
+        <button type="submit" value="Siųsti">
+
+    </form>
+</body>
+</html>

@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.circle {
+  border-radius: 50%;
+}
+.square {
+  width: 20vw;
+  height:20vw;
+  font: 8vw/20vw "Times";
+  background: #ecf5e4;
+  border: 3vw solid #95cd8b ;
+  border-right: 3vw solid #d0e6bb;
+  text-align: center;
+  margin: 20px;
+
+}
