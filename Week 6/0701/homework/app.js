@@ -62,10 +62,66 @@ document.querySelector("#bthUnBlock").addEventListener('click', function (){
     document.querySelector('#inputBlock').disabled = false;
 })
 
+
+document.querySelector("#imgRow").style.height = '280px';
 document.querySelector("#changingImg").style.width = '300px';
 document.querySelector("#changingImg").addEventListener('mouseover', function (){
 document.querySelector("#changingImg").src="https://i.imgur.com/PLDVxza.jpg"
-})
+});
 document.querySelector("#changingImg").addEventListener('mouseout', function (){
 document.querySelector("#changingImg").src="https://i.imgur.com/0DElr0H.jpg"
+});
+
+document.querySelector("#coursorPointer").addEventListener('click', function(){
+    document.querySelector("#activeBlockQuote").addEventListener('mouseover', function(){
+        document.querySelector("#activeBlockQuote").style.cursor = 'pointer';
+    });
 })
+
+document.querySelector("#coursorNotAllowed").addEventListener('click', function(){
+    document.querySelector("#activeBlockQuote").addEventListener('mouseover', function(){
+        document.querySelector("#activeBlockQuote").style.cursor = 'not-allowed';
+    });
+})
+
+document.querySelector("#coursorGrab").addEventListener('click', function(){
+    document.querySelector("#activeBlockQuote").addEventListener('mouseover', function(){
+        document.querySelector("#activeBlockQuote").style.cursor = 'grab';
+    });
+})
+
+document.querySelector("#coursorWait").addEventListener('click', function(){
+    document.querySelector("#activeBlockQuote").addEventListener('mouseover', function(){
+        document.querySelector("#activeBlockQuote").style.cursor = 'wait';
+    });
+})
+
+document.querySelector("#colorText").addEventListener('click', function(){
+    document.querySelector("#activeBlockQuote").style.color = 'orange';
+});
+
+document.querySelector("#colorBackground").addEventListener('click', function(){
+    document.querySelector("#activeBlockQuote").style.backgroundColor = 'MediumSeaGreen';
+});
+
+
+document.querySelector("#borderColor").addEventListener('click', function(){
+    document.querySelector("#activeBlockQuote").style.cssText = 'border:2px solid pink !important;'
+});
+
+document.querySelector("#borderWidth").addEventListener('click', function(){
+    document.querySelector("#activeBlockQuote").style.cssText = 'border:3px solid !important;'
+});
+
+document.querySelector("#borderStyle").addEventListener('click', function(){
+    document.querySelector("#activeBlockQuote").style.cssText = 'border:2px dotted !important;'
+});
+
+document.querySelector("#btnReset").addEventListener('click', function(){
+    document.querySelector("#activeBlockQuote").style.cssText = '';
+    document.querySelector("#activeBlockQuote").addEventListener('mouseover', function(){
+        document.querySelector("#activeBlockQuote").style.cursor = 'default';
+    });
+});
+
+
