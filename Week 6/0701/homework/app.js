@@ -31,12 +31,13 @@ let phone = document.querySelector('#inputPhone');
 let spanE = document.querySelector('.emailValid');
 let spanP = document.querySelector('.phoneValid');
 
+
 email.onkeydown = function(){
     let emailRegex = /^([\.\_a-zA-Z0-9]+)@([a-zA-Z]+)\.([a-zA-Z]){1,8}$/;
     let emailRegexo = /^([\.\_a-zA-Z0-9]+)@([a-zA-Z]+)\.([a-zA-Z]){1,3}\.[a-zA-Z]{1,3}$/;
     if (emailRegex.test(email.value) || emailRegexo.test(email.value)){
         spanE.innerText = 'Email is valid';
-        spanE.style.color = 'green';
+        spanE.style.color = 'green';        
     } else {
         spanE.innerText = 'Email is Invalid';
         spanE.style.color = 'red';        
