@@ -13,20 +13,25 @@ session_start();
 <body>
     <form action='app.php' method='post'>
         <input type='text' name="numOne">
-        <select name='chooseAction'>
-            <option value='+' name='plus'>+</option>
-            <option value='-' name='minus'>-</option>
-            <option value='/' name='divide'>/</option>
-            <option value='*' name='multiply'>*</option>
+        <select name='chooseAction' id='chooseAction'>
+            <option value='+' name='plus' id='+'>+</option>
+            <option value='-' name='minus' id='-'>-</option>
+            <option value='/' name='divide' id='/'>/</option>
+            <option value='*' name='multiply' id='*'>*</option>
             <option value='^2' name='square' id='^2'>^2</option>
         </select>
         <input type='text' name='numTwo' id='numTwo'>
         <button>Skaičiuoti</button>
     </form>
     <script>
-        if(document.querySelector("#\\^2").selected = true){
-            document.querySelector("#numTwo").disabled = true;
-        }
+      
+        document.querySelector("#chooseAction").addEventListener('change', function(){
+            if(document.querySelector("#\\^2").selected = true) {
+            document.querySelector("#numTwo").disabled = true
+        } else  {
+            document.querySelector("#numTwo").disabled = false
+        }}
+        )
     </script>
 </body>
 </html>
