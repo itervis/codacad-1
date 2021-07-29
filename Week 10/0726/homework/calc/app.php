@@ -1,10 +1,12 @@
 <?php
 session_start();
+header('Location: index.php');
 
-if (isset($_POST['numOne'], $_POST['numTwo'], $_POST['chooseAction']) 
+if(isset($_POST['numOne']) && is_numeric($_POST['numOne']) && $_POST['chooseAction'] === '^2') {
+    $_SESSION['result'][] = $_POST['numOne']*$_POST['numOne'];
+} else if (isset($_POST['numOne'], $_POST['numTwo'], $_POST['chooseAction']) 
 && is_numeric($_POST['numOne']) && is_numeric($_POST['numTwo'])
 ){
-    header('Location: index.php');
     if($_POST['chooseAction'] === '+'){
         $_SESSION['result'][] = $_POST['numOne']+$_POST['numTwo'];
     } else if ($_POST['chooseAction'] === '-'){
@@ -16,4 +18,4 @@ if (isset($_POST['numOne'], $_POST['numTwo'], $_POST['chooseAction'])
     }
 
 } else {
-    echo 'iveskite skaicius';}
+    $_SESSION['result'][] = 'iveskite skaicius';}
