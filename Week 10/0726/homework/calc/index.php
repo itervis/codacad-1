@@ -25,13 +25,9 @@ session_start();
     </form>
     <script>
       
-        document.querySelector("#chooseAction").addEventListener('change', function(){
-            if(document.querySelector("#\\^2").selected = true) {
+        document.querySelector("#\\^2").addEventListener('change', function(){ 
             document.querySelector("#numTwo").disabled = true
-        } else  {
-            document.querySelector("#numTwo").disabled = false
-        }}
-        )
+        })
     </script>
 </body>
 </html>
