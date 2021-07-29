@@ -18,20 +18,23 @@ session_start();
             <option value='-' name='minus'>-</option>
             <option value='/' name='divide'>/</option>
             <option value='*' name='multiply'>*</option>
-            <option value='^2' name='square'>^2</option>
+            <option value='^2' name='square' id='^2'>^2</option>
         </select>
-        <input type='text' name="numTwo">
+        <input type='text' name='numTwo' id='numTwo'>
         <button>Skaičiuoti</button>
     </form>
+    <script>
+        if(document.querySelector("#\\^2").selected = true){
+            document.querySelector("#numTwo").disabled = true;
+        }
+    </script>
 </body>
 </html>
 
 <?php
+
 if (isset($_SESSION['result']) && !empty($_SESSION['result'])){
-
 print_r($_SESSION['result']);
-
 }
-// echo /html/body/form/select/option[5]
 
 ?>
