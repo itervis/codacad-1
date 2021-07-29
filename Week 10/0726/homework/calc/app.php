@@ -1,6 +1,5 @@
 <?php
 session_start();
-header('Location: index.php');
 
 if(isset($_POST['numOne']) && is_numeric($_POST['numOne']) && $_POST['chooseAction'] === '^2') {
     $_SESSION['result'][] = $_POST['numOne']*$_POST['numOne'];
@@ -16,6 +15,8 @@ if(isset($_POST['numOne']) && is_numeric($_POST['numOne']) && $_POST['chooseActi
     } else if ($_POST['chooseAction'] === '*'){
         $_SESSION['result'][] = $_POST['numOne']*$_POST['numTwo'];
     }
-
+    
 } else {
     $_SESSION['result'][] = 'iveskite skaicius';}
+
+header('Location: index.php');
