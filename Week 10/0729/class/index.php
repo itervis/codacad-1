@@ -7,7 +7,8 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="app.php" method="post" enctype="multipart/form-data">
+D:\codeAcademy\_baigiamasis\src\imageUploader.php
+    <form action="http://localhost/_baigiamasis/src/imageUploader.php" method="post" enctype="multipart/form-data">
         <textarea id="w3review" name="w3review" rows="4" cols="50" placeholder="Description"></textarea>
         <input type="file" id="myFile" name="file">
         <button name="submit">Submit</button>
